@@ -1,0 +1,4 @@
+lab.glockners.net:443 {
+  tls internal
+  reverse_proxy http://zabbix-dashboard:8080
+}
