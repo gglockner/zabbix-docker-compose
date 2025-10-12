@@ -1,8 +1,6 @@
 networks:
   zabbix-network:
     external: true
-  traefik-network:
-    external: true
 
 volumes:
   zabbix-postgres:
@@ -39,7 +37,6 @@ services:
       ZBX_CACHESIZE: ${ZABBIX_CACHESIZE}
     networks:
       - zabbix-network
-      - traefik-network
     healthcheck:
       test: grep -qr "zabbix_server" /proc/*/status || exit 1
       interval: 10s
@@ -63,7 +60,6 @@ services:
       PHP_TZ: ${ZABBIX_TIMEZONE}
     networks:
       - zabbix-network
-      - traefik-network
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/"]
       interval: 10s

@@ -1,10 +1,11 @@
 # Zabbix Using Docker Compose
 
-A fork of https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-compose
+Run Zabbix as Docker microservices, using official Zabbix Docker images.
+Forked from https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-compose
 
 ## TODO
 - Move volumes to local storage
-- Remove extra networks
+- Remove zabbix network
 - Getting started instructions
   - Configure Zabbix monitoring
   - SSL & DH parameters
@@ -13,3 +14,4 @@ A fork of https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-compo
 ## Done
 - Remove hardcoded Caddy config
 - Remove extra web proxy by using Nginx directly
+- Remove traefik network
