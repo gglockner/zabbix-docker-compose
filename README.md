@@ -4,7 +4,6 @@ Run Zabbix as Docker microservices, using official Zabbix Docker images.
 Forked from https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-compose
 
 ## TODO
-- Remove zabbix network
 - Getting started instructions
   - Configure Zabbix monitoring
   - SSL & DH parameters
@@ -17,3 +16,4 @@ Forked from https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-com
 - Remove traefik network
 - Fix backup script
 - Move volumes to local storage
+- Remove zabbix network
