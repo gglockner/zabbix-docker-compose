@@ -14,7 +14,7 @@ Based on https://github.com/heyvaldemar/zabbix-traefik-letsencrypt-docker-compos
 
 ### Basic steps
 1. Edit the .env file to update the database password
-1. Make self-signed SSL certificates via the following commands:
+1. Make a self-signed SSL certificate via the following commands:
 
 ```
 mkdir certs
@@ -25,7 +25,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 chmod a+r ssl.key
 cd ..
 ```
-1. Start the Zabbix instance: `docker compose up -d`
+3. Start the Zabbix instance: `docker compose up -d`
 
 ### Configure the Zabbix server to monitor itself
 
