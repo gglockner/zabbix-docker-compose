@@ -33,7 +33,7 @@ services:
       retries: 3
       start_period: 90s
     ports:
-      - 10051:10051
+      - 10051:10051 # optional, to allow traffic from the active agent on other computers
     restart: unless-stopped
     depends_on:
       postgres:
