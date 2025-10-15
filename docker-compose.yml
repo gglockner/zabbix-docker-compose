@@ -12,3 +12,13 @@ services:
     depends_on:
       - postgres
       - zabbix-server
+    volumes:
+      - type: bind
+        source: /dev
+        target: /host/dev
+      - type: bind
+        source: /proc
+        target: /host/proc
+      - type: bind
+        source: /
+        target: /host/rootfs
