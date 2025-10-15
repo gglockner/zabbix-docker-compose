@@ -16,9 +16,12 @@ services:
       - type: bind
         source: /dev
         target: /host/dev
+        read_only: true
       - type: bind
         source: /proc
         target: /host/proc
+        read_only: true
       - type: bind
         source: /
         target: /host/rootfs
+        read_only: true
